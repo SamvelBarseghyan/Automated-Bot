@@ -26,9 +26,6 @@ Configuration file: `config.ini` should contains `[bot_config]` and `[content_co
 `[bot_config]` should contains the following fields:
 
 * base_uri - URI of the API which will be used to create users/posts/likes and etc.
-* users_path - Path/Endpoint of the API that will be called to create users.
-* posts_path - Path/Endpoint of the API that will be called to create/like posts.
-* workers_count - Number of workers that will be created to make parallel queries to the API. If value is bigger than 10 it will be automaticaly set to 10.
 
 Example:
 ```
@@ -39,8 +36,6 @@ max_likes_per_user=2
 
 [bot_config]
 base_uri=https://my_api.com
-users_path=users/some_other_path
-posts_path=posts
 ```
 ## How to setup
 
